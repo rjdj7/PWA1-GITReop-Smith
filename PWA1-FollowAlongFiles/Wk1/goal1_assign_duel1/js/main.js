@@ -24,6 +24,14 @@
 //
 //			Call the winnerCheck function; (store the call in a variable named "results")
 //
+//			Create an if statement that says if the results give us no winner{
+//				Add to the round (variable);
+//				Display the same alert from above (line 15) (change "Start" to "Round" and add the round variable to the string concatenation);
+//			}If not{
+//				Alert the user of the "results";
+//				Then "break" out of the loop;
+//			};
+//
 //		}; < Ends For Loop
 //  	
 //
@@ -48,7 +56,7 @@
 //
 //	Call the "fight" function;
 //
-//
+//}; < End the anonymous function
 //
 //
 //
