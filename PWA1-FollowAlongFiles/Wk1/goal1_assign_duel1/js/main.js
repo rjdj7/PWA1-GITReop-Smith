@@ -20,15 +20,24 @@
 //			Create 2 variables and set both of their values to a formula for generating a random number (for damage). For player 1;
 //			And player 2;
 //
-//		};
+//			Create two expressions that update the newly-decremented healths of both players (using the random numbers from above);
+//
+//			Call the winnerCheck function;
+//
+//		}; < Ends For Loop
 //  	
-//		Somewhere in here have it call the winnerCheck function;
-//	};	
+//
+//	}; < Ends "fight" function
+//
 //	Setup another function named "winnerCheck" that does the conditional logic to determine if there is a winner or not{
+//		Create a variable with a string value stating that there is no winner;
+//
+//		Create an if statement that compares player healths to see if they're both under 1{
+//		
+//		};
 //
 //
-//
-//	};
+//	}; < Ends "winnerCheck" function
 //
 //
 //	Call the "fight" function;
