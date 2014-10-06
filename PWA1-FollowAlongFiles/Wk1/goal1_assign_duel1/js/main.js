@@ -22,7 +22,7 @@
 //
 //			Create two expressions that update the newly-decremented healths of both players (using the random numbers from above);
 //
-//			Call the winnerCheck function;
+//			Call the winnerCheck function; (store the call in a variable named "results")
 //
 //		}; < Ends For Loop
 //  	
@@ -33,8 +33,14 @@
 //		Create a variable with a string value stating that there is no winner;
 //
 //		Create an if statement that compares player healths to see if they're both under 1{
-//		
+//			If this is the case, the result should be a string with something like "You Both Die";
+//		}If not, just check if player 1's health is less than 1{
+//			And then return something like "(Player 2 name) wins";
+//		}If not, just check player 2's health{
+//			And, if that's the case, return something like "(Player 1 name) wins";
 //		};
+//
+//		Return the result;
 //
 //
 //	}; < Ends "winnerCheck" function
