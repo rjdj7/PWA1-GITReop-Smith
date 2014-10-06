@@ -58,8 +58,8 @@
 				if(compare !== -1){
 					results.push(db[i]);
 				};
-			;
-		;
+			};
+		};
 		
 		results.sort();
 		
@@ -76,7 +76,7 @@
 		var html = ''+
 			'<p>No Results found.</p>'+
 			'<p style="font-size:10px;">Try searching for "JavaScript".  Just an idea.</p>'
-		;
+		};
 		resultsDIV.innerHTML = html;
 	};
 	
