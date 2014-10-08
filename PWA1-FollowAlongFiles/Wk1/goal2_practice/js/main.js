@@ -212,19 +212,25 @@ console.log(typeof str1.toString()); //convert everything to strings
 
 console.log('------ MORE Numbers ----------');
 
+var num = 457896;
+var dec = 33.123456;
+
 // Use toExponential() console.log num in exponential notation with two decimals.
 
+console.log(num.toExponential(2)); //output: 4.58e+5
 
 // Use toPrecision() console.log dec as four numbers.
 
+console.log(dec.toPrecision(4)); //output: 33.12
 
 //STUDENT ACTIVITY 4:
 //What method would you use to console.log the variable dec with two decimals.
 
+toFixed 
 
 // Use toString() to console.log the type of num.
 
-
+console.log(typeof num.toString());
 
 /*
 	===============================================
@@ -247,6 +253,15 @@ console.log('------ MORE Numbers ----------');
 
 console.log('------ MORE Booleans ----------');
 
+
+var num = 9 * "k"; // NaN
+console.log(num); // False
+
+if (num){
+	console.log("It's true", num);
+}else {
+	console.log("It's false", num);
+};
 
 	
 /*
