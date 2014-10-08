@@ -141,7 +141,10 @@ console.log('------ arrays ----------');
 
     //arrays can hold any data type
 
-
+console.log("index 0: ", myArr[0]);
+console.log("index 1: ", myArr[1]);
+console.log("index 2: ", myArr[2]);
+console.log("index 3: ", myArr[3]);
 
  /*******************************************
 
@@ -151,6 +154,14 @@ console.log('------ arrays ----------');
     2.  console.log the sum of all the numbers in an array
 
  ********************************************/
+
+
+
+var myArray = [10, 50, 100, 200];
+var total = myArray[0] + myArray[1] + myArray[2] + myArray[3];
+
+console.log("The sum is: " + total);
+
 
 
 
@@ -167,8 +178,13 @@ console.log('------ arrays ----------');
     2. setters to add to the array
     3. output array items using string concatenation
 
+
  ********************************************/
 
+var myArray = ["baseball", "football", "basketball"];
+var myString = myArray[0] + ", " + myArray[1] + ", " + myArray2;
+
+console.log(myString);
 
  // conditionals: (definition, indexing, math, if, if-else, if-else if, ternary)
 console.log('------ conditionals ----------');
