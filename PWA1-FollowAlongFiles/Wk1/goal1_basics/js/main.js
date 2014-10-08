@@ -469,6 +469,17 @@ myFn(value1, value2); //arguments get passed to function(var1, var2)
      6.  console.log the results
  ********************************************/
 
+var myctr = 1;
+
+var myCounter = function(newCt){ //< a local variable
+    myctr += newct; //1+5, 6+2
+    console.log("counter = ", myctr);
+};
+
+myCounter(5);
+myCounter(2);
+
+console.log(myCounter);
 
 
 
@@ -482,7 +493,11 @@ myFn(value1, value2); //arguments get passed to function(var1, var2)
     - the called function should be assigned to a variable (i.e name - see below)
  ********************************************/
 
+var myFn = function(){
+    return "jamesBond";
+}
 
+var name = myFn(); //Your function should now return "jamesBond", storing it in the variable "name"
 
     // if a return gives back no value, it instead returns “undefined”
     // this technique is commonly used to end a function early, during execution
