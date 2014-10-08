@@ -515,8 +515,18 @@ var name = myFn(); //Your function should now return "jamesBond", storing it in 
     4.  console.log the results
  ********************************************/
 
+var myctr = 1;
 
+var myCounter = function(newct){
+    var myctr = 50;
+    myctr += newct;
 
+    return myctr;
+}
+
+var cnt = myCounter(5);
+
+console.log("counter = ", cnt);
 
 /*******************************************
  STUDENT ACTIVITY 8:
@@ -528,3 +538,33 @@ var name = myFn(); //Your function should now return "jamesBond", storing it in 
  5. console.log the Results
  ********************************************/
 
+var value1 = "Sunny";
+var value2 = 10;
+
+function guyMood (weather, waves){ 
+    if (weather === "Sunny"){
+        if (waves === 10){
+            Mood = "PUMPED";
+        }else if ((waves <= 9) && (waves >= 5)){
+            Mood = "mellow";
+        }else{
+            Mood = "bummed";
+        }
+    }else if (weather === "Overcast"){
+        if ((waves < 10) && (waves >=7)){
+            Mood = "jackedUP";
+        }else if ((waves <= 6) (waves >=3)){
+            Mood = "totally bummed";
+        }else{
+            Mood = "not happy";
+        }
+    }else{
+        Mood = "sad";
+    }; 
+
+    return Mood;
+};
+
+var moodType = guyMood(value1, value2);
+
+console.log("Bob's Mood: ", Mood);
