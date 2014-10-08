@@ -1,6 +1,6 @@
 /*
-     Name:
-     Date:
+     Name: John Smith
+     Date: 
      Class & Section:  PWA1-####
      Comments: "Goal 1: Review of WPF"
  */
@@ -400,9 +400,17 @@ console.log('------Functions ----------');
      - type the below as an example
         functionName();
  *****************************
+*/
 
+var myctr = 1;
 
+var myCounter = function(){ //< a local variable
+    myctr++; //Increments myCtr by 1
+    console.log("counter = ", myctr);
+};
 
+myCounter(); //calling the funtion. outputs 2. 
+myCounter(); //calling the function again. outputs 3.
 
  /*
     function literal: passing data into a function
@@ -439,7 +447,14 @@ console.log('------Functions ----------');
     - items inside our function we call on these variables.. such as:
  */
 
+var value1 = 1;
+var value2 = 2;
 
+var myFn = function(var1, var2) {
+    console.log("function number: ", var1 + var2); //will be 1+2 from passed arguments below
+};
+
+myFn(value1, value2); //arguments get passed to function(var1, var2)
 
 
 /*******************************************
