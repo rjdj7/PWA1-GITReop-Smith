@@ -342,6 +342,19 @@ console.log(arr1); //shows the array after the splice
     var secondHalfYr = ["Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
     var combined;
 
+var combined = firstQtr + secondQtr;
+console.log(combined);
+
+var combined = firstQtr + secondQtr + secondHalfYr;
+console.log(combined);
+
+var joined = combined.join(",");
+console.log(joined);
+
+var numberSix = joined.pop();
+console.log(numberSix);
+
+console.log(secondHalfYr.splice(2, 2));
 
 /*
 	===============================================
