@@ -597,6 +597,9 @@ for (var beers = 10; beers > 10; beers--){
 			save the array length in a variable, inside the first statement
 	*/
 
+	for (var = 0, j = myNums.length; i < j; i++){ //if 'i' is less than the length of this array, then...
+		console.log(myNums[i]);
+	};
 
 	/*
 		BREAK...
@@ -606,7 +609,12 @@ for (var beers = 10; beers > 10; beers--){
 			break point, and perform no more iterations
 	*/
 
-
+	for (var = 0, j = myNums.length; i < j; i++){ //if 'i' is less than the length of this array, then...
+		if (i === 3){
+			console.log("testing out the break and it broke");
+			break;
+		};
+	};
 
 	/*
 		CONTINUE...
