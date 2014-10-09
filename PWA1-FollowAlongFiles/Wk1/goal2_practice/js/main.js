@@ -530,6 +530,12 @@ console.log("James Bond cars,", cars);
 */
 console.log('------ While / Loop ----------');
 
+var numOfBeers = 10;
+
+while (numOfBeers > 0){
+	console.log(numOfBeers + " kegs on the wall.")
+	numOfBeers--;
+};
 	
 /*
 	===============================================
@@ -555,6 +561,9 @@ console.log('------ While / Loop ----------');
 
 console.log('------For Loop ----------');
 
+for (var beers = 10; beers > 10; beers--){
+	console.log(beers + " bottles of beers on the wall.");
+};
 
 	/* 
 		array.Length
