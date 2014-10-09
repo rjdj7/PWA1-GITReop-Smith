@@ -280,29 +280,40 @@ var arr3 = ['apple', 'orange', 50393, 7.324];
 //Returns the first (least) index of an element within the array equal
 //to the specified value, or -1 if none is found.
 
+console.log(arr2.indexOf('c')); //output: 2
 
 // join()
 // Joins all elements of an array into a string.
 
+console.log(arr2.join(",")); //join the array together, seprating array items by a comma
 
 // pop()
 // Removes the last element from an array and returns that element
 // shift() removes the first element from an array.
 
+var element = arr1.pop();
+console.log(element);
+console.log(arr1); //output 1,2,3,4,5,6 (7 was "popped off")
 
 // push()
 // Adds one or more elements to the end of an array and returns the new
 //   length of the array
 // unshift() - Adds one or more elements to the front of an array.
 
+arr2.push("f");
+console.log(arr2); //output: a, b, c, d, e, f
 
 // reverse()
 // Reverses the order of the elements of an array
 
+console.log(arr1.reverse());
 
 // splice()
 // Adds and/or removes elements from an array.
 
+console.log(arr1);
+console.log(arr1.splice(4, 2)); //shows what you're splicing
+console.log(arr1); //shows the array after the splice
 
 // forEach()
 // Calls a function for each element in the array.
