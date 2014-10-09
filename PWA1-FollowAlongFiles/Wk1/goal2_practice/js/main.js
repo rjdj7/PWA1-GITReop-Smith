@@ -448,6 +448,12 @@ switch(age){
 
 console.log('------ MORE Functions ----------');
 
+var bondsCars = function(){
+	return ["ferrari", "lambo", "vwBug"];
+};
+
+var cars = bondsCars(); //will return the array of values
+console.log("James Bond cars,", cars);
 
 	/* 
 		Self Executing Functions
@@ -465,6 +471,9 @@ console.log('------ MORE Functions ----------');
 				var fn = (function(){})();	
 	*/	
 
+(function(){
+
+})(); //the () is the call
 
 /*
 	===============================================
