@@ -342,6 +342,25 @@ var arr3 = ['apple', 'orange', 50393, 7.324];
 
 console.log('------ MORE Operators - typeof() ----------');
 
+console.log(typeof 5); //output: number
+console.log(typeof "Hi"); //output: string
+
+var str1 = "hello";
+console.log(typeof str1); //output: string
+
+console.log(typeof true); //output: boolean
+console.log(typeof function(){}); //output: function
+
+console.log(typeof obj1); //output: undefined (datatype doesn't exist)
+console.log(typeof [1,2,3,4,5]); //output: object (even though it's an array)
+
+console.log(typeof missingVariable); //output: undefined
+
+if (typeof myString === "undefined"){
+	console.log("myString is undefined");
+}else{
+	console.log("myString is: ", myString);
+} //output: myString is undefined (becuase a myString variable wasn't declared)
 
 /*
 	===============================================
