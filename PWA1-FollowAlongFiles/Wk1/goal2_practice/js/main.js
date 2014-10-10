@@ -637,7 +637,17 @@ for (var beers = 10; beers > 10; beers--){
 			- in the loop just console.log the values
 ********************************************/
 
+var characters = ["Superman", "Batman", "Wolverine", "Iceman"];
 
+for(var i = 0; i < characters.length; i++){
+	console.log(characters[i]);
+};
+
+//or
+
+for (var i = 0, j = characters.length; i < j; i++){
+	console.log(characters[i]);
+}
 
 /*******************************************
     STUDENT ACTIVITY 8: (More Practice):
