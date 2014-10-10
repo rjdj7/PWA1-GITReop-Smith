@@ -256,8 +256,17 @@ console.log('------ Debugging ----------');
 */
 console.log("---------- Scope & Context ----------------");
 
+var mctr = 0;
 
+var myCounter1 = function(newct){
 
+	var myctr = newct + 10;
+
+	console.log("function:", myctr);
+};
+
+myCounter1(5);
+console.log("After function myctr:", myctr);
 
 
 /*
