@@ -1,3 +1,8 @@
+// John Smith
+// 10/10/14
+// Assign: Debug V2
+
+
 // Create privatized scope using a self-executing function
 (function(){
 	
@@ -8,15 +13,15 @@
 	;
 	
 	// Validates search query
-	var validate == function(query){
+	var validate = function(query){
 		
 		// Trim whitespace from start and end of search query
-		while(query.charAt(0) = " "){
+		while(query.charAt(0) === " "){
 			query = query.substring(1, query.length);
 		};
 		while(query.charAt(query.length-1) === ""){
 			query = query.substring(0, query.length-1);
-		;
+		};
 		
 		// Check search length, must have 3 characters
 		if(query.length < 3){
@@ -31,10 +36,10 @@
 	};
 	
 	// Finds search matches
-	var search = function(query);
+	var search = function(query){
 		
 		// split the user's search query string into an array
-		var queryArray = query.join(" ");
+		var queryArray = query.split(" ");
 		
 		// array to store matched results from database.js
 		var results = [];
@@ -76,7 +81,7 @@
 		var html = ''+
 			'<p>No Results found.</p>'+
 			'<p style="font-size:10px;">Try searching for "JavaScript".  Just an idea.</p>'
-		};
+		;
 		resultsDIV.innerHTML = html;
 	};
 	
@@ -110,11 +115,11 @@
 	// THE LINE DIRECTLY BELOW IS CORRECT
 	document.forms[0].onsubmit = function(){
 		var query = searchInput.value;
-		validqte(query);
+		validate(query);
 
         // return false is needed for most events - this will be reviewed in upcoming course material
         // THE LINE DIRECTLY BELOW IS CORRECT
 		return false;
-	;
+	};
 
 })();
