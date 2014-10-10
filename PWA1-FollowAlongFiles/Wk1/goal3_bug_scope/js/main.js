@@ -279,6 +279,22 @@ console.log("After function myctr:", myctr);
 
     console.log("---------- Closure ----------------");
 
+    var fname = "James";
+
+    var nameFN = function (var1){
+    	var firstName = var1;
+    	var lastName = "Bond";
+    	var name = firstName + "" + lastName;
+
+    	var closureFN = function(){
+    		console.log("First and Last Name: ", name);
+    	};
+    		return closureFN;
+    };
+    	var fullName = nameFN(fname);
+    	console.log("Returned full name: ", fullName);
+    	console.log("Var fname: ", fname);
+    	fullName();
 
 
     /*
