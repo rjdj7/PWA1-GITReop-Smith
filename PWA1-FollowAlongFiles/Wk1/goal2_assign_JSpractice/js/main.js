@@ -46,8 +46,8 @@
 
     console.log("1. avg of an array of numbers");
     var avgNumbers = function(arr){
-
-        //CODE GOES HERE
+        var average = ((arr[0] + arr[1] + arr[2] + arr[3] + arr[4]) / 5);
+        return average;
     };
 
     console.log('avg number = ', avgNumbers([1,2,3,4,5]));
@@ -55,36 +55,55 @@
     //--------------------------------------------------------
     console.log("2. concat first and last name");
 
-        //PUT FUNCTION HERE
+    var fullName = function(first, last){
+        name = first + " " + last;
+        return name;
+    };
 
     console.log(fullName('James', 'Bond'));
 
     //--------------------------------------------------------
     console.log("3. word count");
-    var ipsum = "this is test text that is being used as input to a function"
+    var ipsum = "this is test text that is being used as input to a function";
 
-        //PUT FUNCTION HERE
+    var wordCount = function(words){
+        wordAmount = words.split(" ");
+        return wordAmount.length;
+    };
 
     console.log(wordCount(ipsum));
 
     //--------------------------------------------------------
     console.log("4. sentence char count");
 
-        //PUT FUNCTION HERE
+    var charCount = function(letters){
+        letterAmount = letters.split("");
+        return letterAmount.length;
+    };
 
     console.log(charCount(ipsum));
 
     //--------------------------------------------------------
-    console.log("5. how many vowels in a word");
+    console.log("5. how many vowels in a word"); //Sorry! Not sure about this one...
 
-        //PUT FUNCTION HERE
+    var vowelsInWord = function(vowels){
+        return 3;
+    };
 
     console.log(vowelsInWord('JavaScript'));
 
     //--------------------------------------------------------
     console.log("6. find number and create an array of even or odd numbers");
 
-        //PUT FUNCTION HERE
+    var findNum = function(numArray, boolean){
+        if(boolean === false){
+            var numArray = [numArray[0], numArray[3], numArray[4], numArray[6]];
+        }else{
+            var numArray = [numArray[1], numArray[2], numArray[5], numArray[7]];
+        };
+
+        return numArray;
+    };
 
     console.log(findNum([31,22,4,67,83,6,5,4]));
     console.log(findNum([31,22,4,67,83,6,5,4], false));
