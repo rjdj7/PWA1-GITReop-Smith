@@ -74,6 +74,25 @@ console.log(person.birthday.month); // dot notation
 
 console.log('------Object within an object, Arrays, Function ----------');
 
+var thatGuy = {
+	name: "James Bond",
+	course: "PWA1",
+	address: {
+		num: 3300,
+		street: "University",
+		city: "Orlando",
+		cornerOf: ["University", "Semoran"]
+	},
+	showMyAddress: function(){
+		var addr = this.address.street + "," + this.address.city;
+		return addr;
+	}
+};
+
+console.log(thatGuy.showMyAddress());
+
+console.log(thatGuy.address.street);
+console.log(thatGuy.address.city);
 
 
 //properties & methods
@@ -88,6 +107,13 @@ console.log('------Objects - properties & methods ----------');
 
 //Method 1 "Basic"
 
+//Adding properties and methods to an object
+var fsStudent = {};
+fsStudent.age = 22;
+fsStudent.career = "Web Dev";
+fsStudent.sayHello = function (){ // <This function is considered a method, because it's in an object
+	console.log("Hello!");
+};
 
 
 
@@ -98,8 +124,11 @@ console.log('------Objects - properties & methods ----------');
 // we can also access the methods and properties of an object using  [ ] , 
 // 	by using their name as a string - all of the below are valid:
 
+fsStudent.sayHello();
+fsStudent["sayHello"]();
 
-
+console.log(fsStudent.age);
+console.log(fsStudent["age"]);
 
 /* --------------
 Method 2 "OBJECT Literal"
