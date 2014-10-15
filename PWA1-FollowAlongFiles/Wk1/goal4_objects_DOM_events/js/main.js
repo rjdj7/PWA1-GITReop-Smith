@@ -165,14 +165,39 @@ STUDENT ACTIVITY 1:
                     the studentCount using the newCnt variable.
              c.  console.log the address using index syntax
              d. one student's GPA using dot syntax and index syntax
+
+
+
  ----------------------------------------------------------------------------- */
 
 console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
 
 // this is integrating multiple data types - object with an array of objects
 
+var studentAct = {
+	schoolName: "Full Sail",
+	address: {
+		number: 123,
+		street: University Ave
+	},
+	studentCount: 16000,
+	students: {
+		name: "James Bond",
+		GPA: 4.0,
+		classes: ["PWA1", "PWA2"]
+	}
+};
 
+console.log(studentAct.schoolName);
+console.log(studentAct["schoolName"]);
 
+var newCnt = studentAct.studentCount;
+console.log(newCnt);
+
+console.log(studentAct["address"]);
+
+console.log(studentAct.students.GPA);
+console.log(studentAct["students"]["GPA"]);
 /* ----------------------------------------------------------------------------
  STUDENT ACTIVITY 2:
 
@@ -185,7 +210,9 @@ console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
     2.  console.log the average grade by calling the gradeAvg method.
 ----------------------------------------------------------------------------- */
 
+var gradeAvg = function(para){
 
+}
 
 
 /* ===============================================================
@@ -198,7 +225,17 @@ console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
 */
     console.log("---------- Object - For In Loop ----------------");
 
+    var students = {
+    	name: "JamesBond",
+    	gender: "male",
+    	job: "student"
+    };
 
+    for(var key in students){ //The "keys" are name, gender, and job
+    	console.log("Key Name: ", key);
+    	console.log("Value of the key[", key, "]:", students[key]);
+
+    };
 
 /*
 	===============================================
@@ -233,7 +270,12 @@ console.log('------ STUDENT ACTIVITY - ANSWERS BELOW ----------');
 */
     console.log('------ Objects - Converting Datatypes ----------');
 
-
+    var myNum = 1;
+    myString = String(myNum);
+    console.log("myString: ", typeof myString, myString);
+    myBool = Boolean(myString);
+    console.log("myBool: ," typeof myBool, myBool);
+    
 
 /*
 	- because these values act as objects, the data types also have methods and 
