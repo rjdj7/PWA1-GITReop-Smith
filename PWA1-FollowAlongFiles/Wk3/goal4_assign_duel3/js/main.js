@@ -1,14 +1,11 @@
 // John Smith
-// 10/10/14
-// Assignment: Goal 2: Develop Duel #2
+// 10/17/14
+// Assignment: Goal 3: Develop Duel #3
 
 //Setup a (self-executing) function
 (function(){
 
     console.log("FIGHT!!!");
-
-    var playerOne = ["Spiderman", 20, 100]; // An array with Player 1's name, Max-Damage and Starting Health
-    var playerTwo = ["Batman", 20, 100]; // Same here as well (For Player 2)
 
     //Defining my DOM pieces
     var playerOne_text = document.getElementById("kabal");
@@ -16,14 +13,42 @@
     var round_text = document.getElementById("round");
     var button = document.getElementById("fight_btn");
 
+    //Adding behavior to the button:
+    button.addEventListener("click", fight, false);
+
+    //An array of objects with the players' names, Max-Damage and Starting Health
+
+    var players = [
+        {
+            name: "Spiderman",
+            damage: 20,
+            health: 100
+            var playerTwo = ["Batman", 20, 100]; 
+        },
+        {
+            name: "Batman",
+            damage: 20,
+            health: 100
+        }];
+
     //initiate round (A counter to keep track of the round)
     var round=0;
+
+    //Changing the round stats at the top of HTML page
+    round_text.innerHTML = "Click Fight to Begin";
+    playerOne_text.innerHTML = players[0].name + ": " + players[0].health;
+    playerTwo_text.innerHTML = players[1].name + ": " + players[1].health;
 
 	// v Setup a function within it named "fight" that loops through rounds and reduces the player’s health accordingly
     function fight(){
     	// v Setup an alert that shows the first player's name and health, the round number, and the second player's name and health;
-        alert(playerOne[0]+":"+playerOne[2]+"  *START*  "+playerTwo[0]+":"+playerTwo[2]);
+        // alert(playerOne[0]+":"+playerOne[2]+"  *START*  "+playerTwo[0]+":"+playerTwo[2]);
 
+        playerOne_text.innerHTML = players[0].name + ": " + players[0].health);
+        playerTwo_text.innerHTML = players[1].name + ": " + players[1].health);
+        
+        //
+      
 //  	Create a (for) loop that will run 10 rounds{
 //			Create a variable for the minumum player 1 damage and set the value to player 1's max damage *.5;
 //			Create a variable for the minimum player 2 damage and set the value to player 2's max damage *.5;
