@@ -47,8 +47,37 @@
         playerOne_text.innerHTML = players[0].name + ": " + players[0].health);
         playerTwo_text.innerHTML = players[1].name + ": " + players[1].health);
         
-        //
+        //Calculating Max Damage
+        var p1damage = Math.floor(Math.random() * players[0].damage + players[0].damage * .5);
+        var p2damage = Math.floor(Math.random() * players[1].damage + players[1].damage * .5);
+
+        //Calculating inflicted damage
+        players[0].health -= p1damage;
+        players[1].health -= p2damage;
+
+        round_text.innerHTML = "Round #" + round + " Results:";
+        round++;
+
+        if (result === "no winner")
+        {
+            playerOne_text.innerHTML = result;
+            playerTwo_text.innerHTML = "";
+
+            button.removeEventListener("click", fight, false);
+
+            document.querySelector(".buttonblue").innerHTML = "Finished";
+        }
       
+        function winnerCheck(){
+            var result = "no winner";
+            if (players[0].health < 1 && players[1].health < 1){
+                result = "You both die. Game Over...";
+            }else if(players[0].health < 1){
+                result players[1].name + " wins!";
+            }else if (players[1].health < 1){
+                result = players[0].name + " wins!";
+            }
+        }
 //  	Create a (for) loop that will run 10 rounds{
 //			Create a variable for the minumum player 1 damage and set the value to player 1's max damage *.5;
 //			Create a variable for the minimum player 2 damage and set the value to player 2's max damage *.5;
